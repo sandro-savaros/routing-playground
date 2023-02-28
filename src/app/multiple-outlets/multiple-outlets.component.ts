@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-multiple-outlets',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MultipleOutletsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { 
+    this.route.paramMap.subscribe(
+      params => console.log(params)
+    );
+  }
 
   ngOnInit(): void {
   }

@@ -9,6 +9,11 @@ import { CComponent } from './c/c.component';
 import { DComponent } from './d/d.component';
 import { MultipleOutletsComponent } from './multiple-outlets/multiple-outlets.component';
 import { ParentComponent } from './parent/parent.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import { ExpansionPanelsComponent } from './expansion-panels/expansion-panels.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +23,15 @@ import { ParentComponent } from './parent/parent.component';
     CComponent,
     DComponent,
     MultipleOutletsComponent,
-    ParentComponent
+    ParentComponent,
+    ExpansionPanelsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

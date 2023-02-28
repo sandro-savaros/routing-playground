@@ -350,9 +350,13 @@
 
   </div>
 
-  <button class="card card-small" [routerLink]="['/parent']">
-    go to parent
-  </button>
+  <button mat-button [routerLink]="['/parent']">go to parent</button>
+  <button mat-button [routerLink]="['/multi']">go to multi</button>
+  <button mat-button [routerLink]="['/exp']">go to expansion panels</button>
+  <button mat-button [routerLink]="['/act/a']">go to active panels - A</button>
+  <button mat-button [routerLink]="['/act/b']">go to active panels - B</button>
+  <button mat-button [routerLink]="['/act/c']">go to active panels - C</button>
+  <button mat-button [routerLink]="['/act/d']">go to active panels - D</button>
 
   <router-outlet></router-outlet>
 
