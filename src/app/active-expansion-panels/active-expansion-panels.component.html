@@ -1,46 +1,10 @@
 <mat-accordion>
-  <mat-expansion-panel *ngFor="let panel of panels"
-    [expanded]="panel.isActive"
-  >
+  <mat-expansion-panel 
+    *ngFor="let panel of panels" 
+    [expanded]="panel.isActive">
     <mat-expansion-panel-header>
-      <mat-panel-title> {{panel.title}} </mat-panel-title>
+      <mat-panel-title> {{ panel.title }} </mat-panel-title>
     </mat-expansion-panel-header>
     <router-outlet [name]="panel.outletName"></router-outlet>
   </mat-expansion-panel>
 </mat-accordion>
-<!-- <p>active-expansion-panels works!</p>
-<p>expansion-panels works!</p> -->
-<!-- <mat-accordion>
-  <mat-expansion-panel
-    [expanded]="rla.isActive"
-  >
-    <mat-expansion-panel-header>
-      <mat-panel-title> This is A </mat-panel-title>
-    </mat-expansion-panel-header>
-    <router-outlet name="a"></router-outlet>
-  </mat-expansion-panel>
-  <mat-expansion-panel
-    [expanded]="rla.isActive"
-  >
-    <mat-expansion-panel-header>
-      <mat-panel-title> This is B </mat-panel-title>
-    </mat-expansion-panel-header>
-    <router-outlet name="b"></router-outlet>
-  </mat-expansion-panel>
-  <mat-expansion-panel
-    [expanded]="rla.isActive"
-  >
-    <mat-expansion-panel-header>
-      <mat-panel-title> This is C </mat-panel-title>
-    </mat-expansion-panel-header>
-    <router-outlet name="c"></router-outlet>
-  </mat-expansion-panel>
-  <mat-expansion-panel
-    [expanded]="rla.isActive"
-  >
-    <mat-expansion-panel-header>
-      <mat-panel-title> This is D </mat-panel-title>
-    </mat-expansion-panel-header>
-    <router-outlet name="d"></router-outlet>
-  </mat-expansion-panel>
-</mat-accordion> -->

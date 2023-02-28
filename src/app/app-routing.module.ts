@@ -41,22 +41,6 @@ const routes: Routes = [
         (mod) => mod.ActiveExpansionPanelsModule
       ),
   },
-  // {
-  //   path: 'act/a',
-  //   component: ActiveExpansionPanelsComponent,
-  //   loadChildren: () =>
-  //     import('./active-expansion-panels/active-expansion-panels.module').then(
-  //       (mod) => mod.ActiveExpansionPanelsModule
-  //     ),
-  // },
-  // {
-  //   path: 'act/b',
-  //   component: ActiveExpansionPanelsComponent,
-  //   loadChildren: () =>
-  //     import('./active-expansion-panels/active-expansion-panels.module').then(
-  //       (mod) => mod.ActiveExpansionPanelsModule
-  //     ),
-  // },
 ];
 
 @NgModule({
